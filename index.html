@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Proyecto Boostrap</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body data-spy="scroll" data-target="#navbar">
+
+  <!-- HEADER -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="header">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logooficial.png" alt="LogoCompraFacil">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#ofertas">Ofertas</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categorias" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+            <div class="dropdown-menu" id="listacategorias" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Productos del Hogar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Muebles y Electrodomesticos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Tecnologia</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Vehiculos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Inmuebles</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="filtros" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filtrar por
+            </a>
+            <div class="dropdown-menu" id="listafiltros" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Lo mas reciente</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Destacado</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="modal" data-target="#modalRegistro">Registrarse</a>
+          </li>
+
+        </ul>
+
+<!-- FORMULARIO DE BUSQUEDA 
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  -->
+  
+</div>
+</div>
+</nav>
+
+
+<!-- OFERTAS -->
+<section id="ofertas">
+  <div class="bd-example">
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/oferta1.jpg" class="d-block w-100" alt="oferta1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Casa minimalista</h5>
+            <p>Hermosa casa minimalista, construida en 2018 por los mejores arquitectos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/oferta2.jpg" class="d-block w-100" alt="oferta2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tesla Model S</h5>
+            <p>Hermoso automovil Tesla Model S con 15mil KM</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/oferta3.jpg" class="d-block w-100" alt="oferta3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>iPHONE X</h5>
+            <p>Hermoso iPhone X, nuevos en caja</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div class="overlay">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 offset-md-6 text-center">
+              <a href="#" class="btn btn-outline-light">Mas informacion</a>
+              <button type="button" class="btn btn-outline-warning">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICACIONES -->
+
+<section id="publicaciones">
+  <div class="container">
+    <div class="row">   
+     <div class="col text-center text-uppercase">
+      <h2>TITULO</h2>      
+    </div> 
+    <div  class="row">
+
+     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="img/publi1.jpg" class="card-img-top" alt="publicacion 1">
+        <div class="card-body">
+          <h5 class="card-title">Cotonetes</h5>
+          <p class="card-text">Cotonetes el gran bazar, de gran calidad.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">$300</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="img/publi2.jpg" class="card-img-top" alt="publicacion 2">
+        <div class="card-body">
+          <h5 class="card-title">Pasta de dientes</h5>
+          <p class="card-text">Pasta de dientes el gran bazar.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">$120</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card">
+        <img src="img/publi3.jpg" class="card-img-top" alt="publicacion 3">
+        <div class="card-body">
+          <h5 class="card-title">Barbies</h5>
+          <p class="card-text">Barbies el gran bazar, de gran calidad.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">$600</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card img-fluid">
+        <img src="img/publi4.jpg" class="card-img-top" alt="publicacion 4">
+        <div class="card-body">
+          <h5 class="card-title">Tazas</h5>
+          <p class="card-text">Tazas el gran bazar, de gran calidad.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">$400</small>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer id="footer" class="pb-4 pt-4">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 col-sm-6 col-lg">
+        <a href="#">Preguntas Frencuentes</a>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+        <a href="#">Contáctanos</a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+        <a href="#">Prensa</a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+        <a href="#">Terminos y Condiciones</a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+        <a href="#">Privacidad</a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+        <a href="#">Trabaja con nosotros</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRegistro">Registro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col">
+              <div class="col">
+
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control text-center mb-2 ml-1 mr-1" placeholder="Nickname" aria-label="Nickname" aria-describedby="inputGroup-sizing-sm">
+
+                  <input type="text" class="form-control text-center mb-2 ml-1 mr-1" placeholder="Cedula" aria-label="Cedula" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm mb-3">
+                  <input type="text" class="form-control text-center mb-1 ml-1 mr-1" placeholder="Nombre" aria-label="Nombre" aria-describedby="inputGroup-sizing-sm">
+
+                  <input type="text" class="form-control text-center mb-1 ml-1 mr-1" placeholder="Apellido" aria-label="Apellido" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" data-toggle="popover" title="Inserta un correo electronico valido" >@</span>
+                  </div>
+                  <input type="text" class="form-control text-center" placeholder="Email" aria-label="Email" aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+              </div>
+            </div>            
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-warning">REGISTRARSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
