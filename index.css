@@ -40,12 +40,13 @@
 
 #footer,
 .navbar{
-  background: linear-gradient(0deg, #bf9c31, #e9b20d 25%, #ffc107);
+  background: linear-gradient(0deg, #1AA1E5, #2F6CD3 25%, #1E4689);
 
 }
 
 .nav-item{
 	color: #FFFFFF;
+	cursor: default;
 }
 
 #footer a{
